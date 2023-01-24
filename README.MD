@@ -1,1 +1,1 @@
-This repo contains any tools or scripts that I create to use in a project but also have a more general application.
+This repo contains any tools or scripts that I create to use in a project that have more general applications or don't make sense to be contained in their own repo.
