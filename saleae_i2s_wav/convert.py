@@ -10,8 +10,8 @@ def ConvertFile(filename_in:str, filename_out:str="out.wav", nChannels:int=2, sa
         if freq is None:
             time_step1 = float(inFile.readline().split(',')[0])
             time_step2 = float(inFile.readline().split(',')[0])
-            # Round to the nearest kHz, variable unit is still Hz though
-            freq = round(1 / ((time_step2 - time_step1) * 2000)) * 1000
+            # Round to the nearest 100Hz, variable unit is still Hz though
+            freq = round(1 / ((time_step2 - time_step1) * 200)) * 100
             print(f"Calculated frequency: {freq}")
             
             inFile.seek(0) # Move back to top of file
